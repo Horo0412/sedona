@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sedona</title>
+    <title>Sedona - городок в Аризоне</title>
 </head>
+
 <body>
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
-                <img src="#" width="150" height="150" alt="Логоти сайта Седона">
+                <img src="img/sedona-logo.png" width="100" height="50" alt="Логоти сайта Седона">
             </a>
             <ul class="site-navigation">
                 <li><a href="info.html">Информация</a></li>
@@ -22,13 +23,85 @@
     </header>
 
     <main class="container">
+        <!--Приветствие-->
         <div class="welcome">
-            <img src="#">
-            <h1 class="breadcumbers">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <img src="img/showcase-bg.jpg">
+            <img src="img/welcome.png">
+            <img src="img/showcase-shape.png">
+            <h1>Sedona</h1>
+            <p>"Becaus the Grand Canuon sucks!"</p>
+            <h1 class="about">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         </div>
+        <!--Преимущества-->
         <section class="advantage">
             <span>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
-            
+            <ol>
+                <li>
+                    <!--как определить размеры изображений-->
+                    <h3>Настоящий городок</h3>
+                    <p>№1</p>
+                    <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                    <img src="img/sedona-photo1.jpg" alt="Фотография города Седона">
+                    <!--Жильё, еда, сувениры-->
+                    <ul>
+                        <li>
+                            <img src="img/house-icon.svg">
+                            <h4>Жильё</h4>
+                            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                        </li>
+                        <li>
+                            <img src="img/burger-icon.svg">
+                            <h4>Еда</h4>
+                            <p>Всегда заказывайте фирменный бургер, вы не разачаруетесь!</p>
+                        </li>
+                        <li>
+                            <img src="img/gift-icon.svg">
+                            <h4>Сувениры</h4>
+                            <p>Не только китайского, но и местного производства!</p>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <img src="img/sedona-photo2.jpg" alt="Фотография города Седона">
+                    <h3>Там есть мост Дьявола</h3>
+                    <p>№2</p>
+                    <p>Да, по нему можно пройти!Если конечно вы осмелитесь</p>
+                </li>
+
+                <li>
+                    <h3>Небольшая площадь</h3>
+                    <p>№3</p>
+                    <p>Все достопремичательности находятся очень близко</p>
+                </li>
+
+                <li>
+                    <h3>Красивая дорога</h3>
+                    <p>№4</p>
+                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+                </li>
+
+                <li>
+                    <h3>Мало туристов</h3>
+                    <p>№5</p>
+                    <p>Большинство едет в Гранд Каньон и толпится там</p>
+                </li>
+            </ol>
+        </section>
+        <!--Интерес-->
+        <div>
+            <h1>Заинтересовались?</h1>
+            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <img src="img/map.png">
+        </div>
+
+        <section class="modal">
+            <h1>Поиск гостиницы в Седоне</h1>
+            <form>
+                <!--Здесь будет форма-->
+                <!--какой атрибут задается <button>, чтобы при наведении на конпку менялся крусор?-->
+                <button>Найти</button>
+            </form>
         </section>
     </main>
 
@@ -37,19 +110,20 @@
         <div class="social">
             <ul class="social-button">
                 <li class="Twitter">
-                    <a href="#"><Img src="#" alt="Twitter"></a>
+                    <!--Хочу добавить атрибут target. Что указывать в кавычках?-->
+                    <a href="https://twitter.com/"><img src="img/twitter-icon.svg" alt="Twitter"></a>
                 </li>
                 <li class="Facebook">
-                    <a href="#"><Img src="#" alt="Facebook"></a>
+                    <a href="https://ru-ru.facebook.com/"><img src="img/fb-icon.svg" alt="Facebook"></a>
                 </li>
                 <li class="YouTube">
-                    <a href="#"><Img src="#" alt="YouTube"></a>
+                    <a href="https://www.youtube.com/"><img src="img/youtube-icon.svg" alt="YouTube"></a>
                 </li>
             </ul>
         </div>
         <div class="footer-copyriht">
-            <span>Разработано:</span>
-            <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+            <span>website by</span>
+            <a class="button" href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.svg"></a>
         </div>
     </footer>
 </body>
