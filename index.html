@@ -25,12 +25,13 @@
     <main class="container">
         <!--Приветствие-->
         <div class="welcome">
+            <!--картинки обернутся в bg-->
             <img src="img/showcase-bg.jpg">
             <img src="img/welcome.png">
             <img src="img/showcase-shape.png">
             <h1>Sedona</h1>
             <p>"Becaus the Grand Canuon sucks!"</p>
-            <h1 class="about">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <p class="about">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         </div>
         <!--Преимущества-->
         <section class="advantage">
@@ -89,17 +90,22 @@
             </ol>
         </section>
         <!--Интерес-->
-        <div>
-            <h1>Заинтересовались?</h1>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <img src="img/map.png">
-        </div>
-
-        <section class="modal">
-            <h1>Поиск гостиницы в Седоне</h1>
-            <form>
-                <!--Здесь будет форма-->
-                <!--какой атрибут задается <button>, чтобы при наведении на конпку менялся крусор?-->
+        <section class="hotel-search">
+            <div>
+                <h2>Заинтересовались?</h2>
+                <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <img src="img/map.png">
+            </div>
+            <h2>Поиск гостиницы в Седоне</h2>
+            <form class="found"  action="https://echo.htmlacademy.ru" method="post">
+                <label for="ad">
+                    Дата заезда:
+                    <input type="text" name="arrival-date" value="" placeholder="24 Апреля 2017" id="ad">
+                </label>
+                <label for="dd">
+                    Дата выезда:
+                    <input type="text" name="date-departure" value="" placeholder="4 июля 2017" id="dd">
+                </label>
                 <button>Найти</button>
             </form>
         </section>
