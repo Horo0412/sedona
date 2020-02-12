@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sedona - городок в Аризоне</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,19 +15,19 @@
                 <img src="img/sedona-logo.png" width="100" height="50" alt="Логоти сайта Седона">
             </a>
             <ul class="site-navigation">
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="gallery.html">Фото и видео</a></li>
-                <li><a href="map.html">Карта штата</a></li>
-                <li><a href="hotels.html">Гостиницы</a></li>
+                <li><a class="site-link" href="info.html">Информация</a></li>
+                <li><a class="site-link" href="gallery.html">Фото и видео</a></li>
+                <li><a class="site-link" href="map.html">Карта штата</a></li>
+                <li><a class="site-link" href="hotels.html">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
-
+<!--Объедиить формы-->
     <main>
         <div class="main-filters">
-            <h2 class="visually-hidden">Фильтры для поиска гостиницы</h2>
+        <h2 class="visually-hidden">Фильтры для поиска гостиницы</h2>
+        <form class="form" action="#" method="GET"></form>
             <section class="infrastructure">
-                <form class="form" action="#" method="GET">
                     <h3>Инфраструктура</h3>
                     <label for="pool">
                         <input type="checkbox" name="inf-pool" id="pool" checked>
@@ -38,11 +41,9 @@
                         <input type="checkbox" name="inf-wf" id="wi-fi">
                     Wi-Fi
                     </label>
-                </form>
             </section>
 
             <section class="type-of-housing">
-                <form class="form" action="#" method="GET">
                     <h3>Тип жилья</h3>
                     <label for="hotel">
                         <input type="checkbox" name="hotel-house" id="hotel" checked>
@@ -56,11 +57,9 @@
                         <input type="checkbox" name="apartments-house" id="apartments" checked>
                     Апартаменты
                     </label>
-                </form>
             </section>
 
             <section class="cost">
-                <form class="form" action="#" method="GET">
                     <h3>Стоимость в сутки (р:)</h3>
                     <label for="from">
                         От
@@ -74,12 +73,12 @@
                         <input type="range" name="hotel-house" id="cost-hotel">
                     </label><br>
                     <button type="submit">Показать</button>
-                </form>
             </section>
+        </form>
         </div>
 
         <div class="main-result">
-            <div class="result">
+            <div class="filters">
                 <h2 class="visually-hidden">Результаты поиска</h2>
                 <span>Найдено: 3</span>
                 <h3>Сортировка</h3>
@@ -88,32 +87,38 @@
                     <li>По типу</li>
                     <li>По рейтингу</li>
                 </ul>
+                <ul>
+                    <li>^</li>
+                    <li>V</li>
+                </ul>
             </div>
             <!--Как оформить рейтинг?-->
-            <div class="Amara">
-                <img src="img/hotel1.jpg" alt="Гостиница Amara Resort & Spa">
-                <h4>Amara Resort & Spa</h4>
-                <p>Гостиница</p>
-                <p>от 4000 р.</p>
-                <button type="button">Подробнее</button>
-                <button type="button">Забронировать</button>
-            </div>
-            <div class="Desert">
-                <img src="img/hotel2.jpg" alt="Мотель Desert Quail Inn">
-                <h4>Desert Quail Inn</h4>
-                <p>Мотель</p>
-                <p>от 3000 р.</p>
-                <button type="button">Подробнее</button>
-                <button type="button">Забронировать</button>
-            </div>
-            <div class="Villas">
-                <img src="img/hotel3.jpg" alt="Апартаменты Villas at Poco Diablo">
-                <h4>Villas at Poco Diablo</h4>
-                <p>Апартаменты</p>
-                <p>от 2000 р.</p>
-                <button type="button">Подробнее</button>
-                <button type="button">Забронировать</button>
-            </div>
+            <ul class="search-result-list">
+                <li class="result-item">
+                    <img src="img/hotel1.jpg" alt="Гостиница Amara Resort & Spa">
+                    <h4>Amara Resort & Spa</h4>
+                    <p>Гостиница</p>
+                    <p>от 4000 р.</p>
+                    <button type="button">Подробнее</button>
+                    <button type="button">Забронировать</button>
+                </li>
+                <li class="result-item">
+                    <img src="img/hotel2.jpg" alt="Мотель Desert Quail Inn">
+                    <h4>Desert Quail Inn</h4>
+                    <p>Мотель</p>
+                    <p>от 3000 р.</p>
+                    <button type="button">Подробнее</button>
+                    <button type="button">Забронировать</button>
+                </li>
+                <li class="result-item">
+                    <img src="img/hotel3.jpg" alt="Апартаменты Villas at Poco Diablo">
+                    <h4>Villas at Poco Diablo</h4>
+                    <p>Апартаменты</p>
+                    <p>от 2000 р.</p>
+                    <button type="button">Подробнее</button>
+                    <button type="button">Забронировать</button>
+                </li>
+            </ul>
         </div>
     </main>
 
