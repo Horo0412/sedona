@@ -1,3 +1,6 @@
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
 body {
   margin: 0;
   padding: 0;
@@ -13,8 +16,8 @@ body {
 }
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .main-navigation {
@@ -34,6 +37,12 @@ body {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.bc-photo-1 {
+  background-image: url(img/showcase-bg.jpg);
+  width: 1200px;
+  height: 800px;
 }
 
 .about {
@@ -57,8 +66,424 @@ body {
 }
 
 .advantege-wrapper {
-    background-color: #81b3d2;
-    padding: 46px 60px 64px;
-    color: white;
-    text-align: center;
+  background-color: #81b3d2;
+  padding: 46px 60px 64px;
+  color: white;
+  text-align: center;
+}
+
+.advantege-list {
+  list-style: none;
+}
+
+.icon {
+  list-style: none;
+}
+
+.other {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.86;
+  text-align: center;
+  color: #333333;
+}
+
+.advantage-main {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+  text-align: center;
+  color: #000000;
+  width: 450px;
+}
+
+.wrapper {
+  color: black;
+  text-align: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.form-name {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+}
+
+.search {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.71;
+  text-align: center;
+  color: #333333;
+}
+
+.search-title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 34px 5px;
+  background-color: #766357;
+  min-width: 568px;
+}
+
+.input-label {
+  cursor: pointer;
+}
+
+.input {
+  background-color: #f2f2f2;
+  border: none;
+  text-transform: uppercase;
+  padding: 14px 13px 13px;
+  width: 346px;
+  font-weight: bold;
+  color: #333333;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.input:hover {
+  border: 3px solid #e5e5e5;
+  text-transform: uppercase;
+  padding: 14px 13px 13px;
+  width: 346px;
+  font-weight: bold;
+  color: #333333;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.input:focus {
+  background-color: #ebebeb;
+  border: none;
+  text-transform: uppercase;
+  padding: 14px 13px 13px;
+  width: 346px;
+  font-weight: bold;
+  color: #333333;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.input-short {
+  width: 38px;
+  padding: 12px 3px;
+  text-align: center;
+}
+
+.search-button{
+  background-color: #81b3d2;
+  color: #ffffff;
+  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 458px;
+  height: 58px;
+  padding: 17px 197px 22px;
+}
+.search-button:focus,
+.search-button:hover {
+  background-color: #669ec0;
+  color: #ffffff;
+  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 458px;
+  height: 58px;
+  padding: 17px 197px 22px;
+}
+
+.search-button:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 458px;
+  height: 58px;
+  padding: 17px 197px 22px;
+}
+
+.stepper-button {
+  background-color: #f2f2f2;
+  width: 38px;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  line-height: 1;
+  padding: 12px 3px;
+  font-weight: bold;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: gray;
+}
+
+.teg {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.main-filters {
+  background-image: url(img/form-bg.jpg);
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+/*footer*/
+.social-button {
+  list-style: none;
+}
+
+.twitter {
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+}
+
+.twitter:hover,
+.twitter:focus {
+  background-color: #669ec0;
+  width: 46px;
+  height: 48px;
+}
+
+.twitter:active {
+  background-color: #5496bd;
+  width: 46px;
+  height: 48px;
+}
+
+.facebook {
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+}
+
+.facebook:hover,
+.facebook:focus {
+  background-color: #669ec0;
+  width: 46px;
+  height: 48px;
+}
+
+.facebook:active {
+  background-color: #5496bd;
+  width: 46px;
+  height: 48px;
+}
+
+.youtube {
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+}
+
+.youtube:hover,
+.youtube:focus {
+  background-color: #669ec0;
+  width: 46px;
+  height: 48px;
+}
+
+.youtube:active {
+  background-color: #5496bd;
+  width: 46px;
+  height: 48px;
+}
+
+.icon {
+  padding: 17px 15px;
+}
+
+/*стилизация hotels*/
+/*стилизация hotel-1*/
+.result-item {
+  list-style: none;
+}
+.hotel-1,
+.hotel-2,
+.hotel-3 {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.cost {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: left;
+  color: #333333;
+}
+
+.more-details {
+  width: 110px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-right: 17px;
+  padding-bottom: 8px;
+  padding-left: 17px;
+  cursor: pointer;
+}
+
+.more-details:hover,
+.more-details:focus{
+  width: 110px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  background-color: #669ec0;
+  border: none;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-right: 17px;
+  padding-bottom: 8px;
+  padding-left: 17px;
+  cursor: pointer;
+}
+
+.more-details:active{
+  width: 110px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #88b6d1;
+  background-color: #5496bd;
+  border: none;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-right: 17px;
+  padding-bottom: 8px;
+  padding-left: 17px;
+  cursor: pointer;
+}
+
+.book {
+  width: 142px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  background-color: #766357;;
+  border: none;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-right: 17px;
+  padding-bottom: 8px;
+  padding-left: 17px;
+  cursor: pointer;
+}
+
+.book:focus,
+.book:hover {
+  width: 142px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  background-color: #604e43;
+  border: none;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-right: 17px;
+  padding-bottom: 8px;
+  padding-left: 17px;
+  cursor: pointer;
+}
+
+.book:active {
+  width: 142px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #857871;
+  background-color: #503e33;
+  border: none;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-right: 17px;
+  padding-bottom: 8px;
+  padding-left: 17px;
+  cursor: pointer;
 }

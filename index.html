@@ -15,7 +15,7 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
-                <img src="img/sedona-logo.png" width="100" height="50" alt="Логоти сайта Седона">
+                <img src="img/sedona-logo.png" width="139px" height="71px" alt="Логоти сайта Седона">
             </a>
             <ul class="site-navigation">
                 <li><a class="site-link" href="info.html">Информация</a></li>
@@ -30,7 +30,7 @@
         <!--Приветствие-->
         <div class="welcome">
             <!--картинки обернутся в bg-->
-            <img src="img/showcase-bg.jpg">
+            <div class="bc-photo-1"></div>
             <img src="img/welcome.png">
             <img src="img/showcase-shape.png">
             <h1 class="about">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -38,7 +38,7 @@
         <!--Преимущества-->
         <section class="advantage">
             <span class="advantage-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
-            <ol>
+            <ol class="advantege-list">
                 <li>
                     <!--как определить размеры изображений-->
                     <div class="advantege-wrapper">
@@ -48,87 +48,106 @@
                     </div>
                     <img src="img/sedona-photo1.jpg" alt="Фотография города Седона">
                     <!--Жильё, еда, сувениры-->
-                    <ul>
+                    <ul class="icon">
                         <li>
                             <img src="img/house-icon.svg">
-                            <h4>Жильё</h4>
-                            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                            <h4 class="advantage-main">Жильё</h4>
+                            <p class="other">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                         </li>
                         <li>
                             <img src="img/burger-icon.svg">
-                            <h4>Еда</h4>
-                            <p>Всегда заказывайте фирменный бургер, вы не разачаруетесь!</p>
+                            <h4 class="advantage-main">Еда</h4>
+                            <p class="other">Всегда заказывайте фирменный бургер, вы не разачаруетесь!</p>
                         </li>
                         <li>
                             <img src="img/gift-icon.svg">
-                            <h4>Сувениры</h4>
-                            <p>Не только китайского, но и местного производства!</p>
+                            <h4 class="advantage-main">Сувениры</h4>
+                            <p class="other">Не только китайского, но и местного производства!</p>
                         </li>
                     </ul>
                 </li>
 
                 <li>
-                    <!--div-->
                     <img src="img/sedona-photo2.jpg" alt="Фотография города Седона">
+                    <div class="advantege-wrapper">
                     <h3>Там есть мост Дьявола</h3>
                     <p>№2</p>
                     <p>Да, по нему можно пройти!Если конечно вы осмелитесь</p>
+                    </div>
                 </li>
 
                 <li>
+                    <div class="wrapper">
                     <h3>Небольшая площадь</h3>
                     <p>№3</p>
                     <p>Все достопремичательности находятся очень близко</p>
+                    </div>
                 </li>
 
                 <li>
+                    <div class="wrapper">
                     <h3>Красивая дорога</h3>
                     <p>№4</p>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+                    </div>
                 </li>
 
                 <li>
+                    <div class="wrapper">
                     <h3>Мало туристов</h3>
                     <p>№5</p>
                     <p>Большинство едет в Гранд Каньон и толпится там</p>
+                    </div>
                 </li>
             </ol>
         </section>
         <!--Интерес-->
         <section class="hotel-search">
             <div>
-                <h2>Заинтересовались?</h2>
-                <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <img src="img/map.png">
+                <h2 class="form-name">Заинтересовались?</h2>
+                <p class="search">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                
             </div>
-            <h2>Поиск гостиницы в Седоне</h2>
+            <h2 class="search-title">Поиск гостиницы в Седоне</h2>
             <form class="found" action="https://echo.htmlacademy.ru" method="post">
-                <label for="ad">
+                <label class="input-label" for="ad">
                     Дата заезда:
-                    <input type="text" name="arrival-date" value="" placeholder="24 Апреля 2017" id="ad">
+                    <input class="input" type="text" name="arrival-date" value="" placeholder="24 Апреля 2017" id="ad">
                 </label>
-                <label for="dd">
+                <label class="input-label" for="dd">
                     Дата выезда:
-                    <input type="text" name="date-departure" value="" placeholder="4 июля 2017" id="dd">
+                    <input class="input" type="text" name="date-departure" value="" placeholder="4 июля 2017" id="dd">
                 </label>
-                <button>Найти</button>
+                <label class="number number-adult">
+                    Взрослые:
+                    <button class="stepper-button" type="button">-</button>
+                    <input class="input input-short" type="text" name="adult" placeholder="2">
+                    <button class="stepper-button" type="button">+</button>
+                </label>
+                <label class="number number-child">
+                    Дети:
+                    <button class="stepper-button" type="button">-</button>
+                    <input class="input input-short" type="text" name="child" placeholder="2">
+                    <button class="stepper-button" type="button">+</button>
+                </label>
+                <button class="search-button">Найти</button>
             </form>
+            <img src="img/map.png">
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer>
         <span class="teg">#VisitSedona</span>
         <div class="social">
             <ul class="social-button">
-                <li class="Twitter">
-                    <!--Хочу добавить атрибут target. Что указывать в кавычках?-->
-                    <a href="https://twitter.com/"><img src="img/twitter-icon.svg" alt="Twitter"></a>
+                <li class="twitter">
+                    <a href="https://twitter.com/"><img class="icon" src="img/twitter-icon.svg" alt="Twitter"></a>
                 </li>
-                <li class="Facebook">
-                    <a href="https://ru-ru.facebook.com/"><img src="img/fb-icon.svg" alt="Facebook"></a>
+                <li class="facebook">
+                    <a href="https://ru-ru.facebook.com/"><img class="icon" src="img/fb-icon.svg" alt="Facebook"></a>
                 </li>
-                <li class="YouTube">
-                    <a href="https://www.youtube.com/"><img src="img/youtube-icon.svg" alt="YouTube"></a>
+                <li class="youtube">
+                    <a href="https://www.youtube.com/"><img class="icon" src="img/youtube-icon.svg" alt="YouTube"></a>
                 </li>
             </ul>
         </div>
